@@ -3,7 +3,7 @@
 ## 1. Check Requirements
 
 * Windows PC
-* 4 GB+ RAM
+* Minimum 4 GB+ RAM
 * 20 GB+ free disk space
 * Internet connection
 

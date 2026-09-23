@@ -7,7 +7,7 @@
 3. Open **VMware Cloud Foundation → Download**.
 4. Search for **vSphere**.
 5. Select **VMware vSphere Enterprise**.
-6. Select **vSphere 6.5**.
+6. Select **vSphere 8**.
 7. Download the available **ESXi custom ISO**.
 
 ## 2. Create the ESXi Virtual Machine

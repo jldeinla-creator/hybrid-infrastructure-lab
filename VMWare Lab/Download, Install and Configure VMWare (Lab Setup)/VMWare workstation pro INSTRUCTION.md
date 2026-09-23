@@ -12,7 +12,7 @@
 1. Go to the **Broadcom Support Portal**.
 2. Sign in.
 3. Go to **VMware Downloads**.
-4. Select **VMware Workstation Player**.
+4. Select **VMware Workstation Player or Pro**.
 5. Download the required version.
 
 ## 3. Install

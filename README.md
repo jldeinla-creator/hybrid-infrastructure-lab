@@ -4,7 +4,9 @@ Welcome to my **IT Infrastructure Homelab Portfolio**.
 
 This repository documents my hands-on learning and practical projects in **VMware virtualization, Windows Server 2022, Microsoft 365/Office administration, CCNA networking, Microsoft Azure, and Linux system administration**.
 
-The goal of this homelab is to build real-world IT infrastructure skills by **building, configuring, troubleshooting, documenting, and improving** different technologies in a controlled environment.
+The goal of this homelab is to build real-world IT infrastructure skills by **building, configuring, troubleshooting, documenting, and improving** different technologies in a controlled environment, while using **free, open-source, trial, and community resources whenever possible to keep costs as low as possible**.
+
+All **documentation, configurations, procedures, notes, and screenshots** in this repository are based on my **own hands-on lab experience, testing, and troubleshooting**. The repository reflects my actual learning process, including the configurations I performed, problems I encountered, solutions I tested, and results I achieved.
 
 ---
 

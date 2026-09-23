@@ -1,32 +1,34 @@
-# IT Homelab
+# IT Infrastructure Homelab
 
 ![VMware](https://img.shields.io/badge/VMware-Virtualization-blue)
 ![Windows Server](https://img.shields.io/badge/Windows%20Server-2022-blue)
-![Microsoft Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4)
-![Linux](https://img.shields.io/badge/Linux-System%20Administration-black)
 ![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-Administration-purple)
+![CCNA](https://img.shields.io/badge/Cisco-CCNA-red)
+![Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4)
+![Linux](https://img.shields.io/badge/Linux-System%20Administration-black)
 
 ## 📌 Overview
 
-Welcome to my **IT Homelab** repository.
+Welcome to my **IT Infrastructure Homelab** repository.
 
-This project is a personal hands-on environment where I practice and document **system administration, virtualization, server management, cloud administration, Microsoft 365 administration, Linux, networking, troubleshooting, and automation**.
+This is a personal hands-on lab environment where I practice and document **system administration, virtualization, networking, Windows Server administration, Microsoft 365 administration, cloud computing, Linux administration, troubleshooting, and automation**.
 
-The goal of this homelab is to build practical IT infrastructure skills through real-world lab scenarios, configuration exercises, troubleshooting, and documentation.
+The purpose of this homelab is to build practical technical skills through real-world lab scenarios, configuration exercises, troubleshooting, and technical documentation.
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Technologies & Areas of Study
 
 ### VMware
 
 * VMware ESXi
 * VMware vSphere
-* Virtual Machines
+* Virtual machine deployment
 * Virtual networking
 * Datastore management
 * Host configuration
 * Resource management
+* VM snapshots and administration
 
 ### Windows Server 2022
 
@@ -40,26 +42,45 @@ The goal of this homelab is to build practical IT infrastructure skills through 
 * Remote administration
 * Server troubleshooting
 
-### Microsoft 365 / Office Administration
+### Microsoft Office / Microsoft 365 Administration
 
 * Microsoft 365 administration
-* User account management
-* Microsoft 365 services
+* User and account management
 * Microsoft Office applications
 * License and access management
-* Basic account troubleshooting
-* Security and administration concepts
+* Basic Microsoft 365 troubleshooting
+* Identity and access concepts
+* Administrative portal practice
+
+### CCNA / Networking
+
+* Networking fundamentals
+* OSI and TCP/IP models
+* IPv4 and IPv6
+* Subnetting
+* VLANs
+* Trunking
+* Routing
+* Switching
+* Static routing
+* DHCP
+* DNS
+* NAT
+* Network troubleshooting
+* Cisco IOS fundamentals
+* Packet Tracer labs
 
 ### Microsoft Azure
 
+* Azure Resource Groups
 * Azure Virtual Machines
-* Resource Groups
 * Azure Virtual Networks
 * Storage
 * Microsoft Entra ID
 * Identity and access management
-* Azure administration
-* Cloud infrastructure fundamentals
+* Network configuration
+* Cloud administration
+* Hybrid infrastructure concepts
 
 ### Linux
 
@@ -71,123 +92,148 @@ The goal of this homelab is to build practical IT infrastructure skills through 
 * Services and processes
 * Networking
 * System monitoring
-* Bash commands and scripting
+* Bash commands
+* Bash scripting
 
 ---
 
 ## 🎯 Learning Objectives
 
-* Build practical **System Administration** experience
+* Build practical **System Administration** skills
+* Develop strong networking fundamentals through **CCNA studies**
 * Learn VMware virtualization and management
-* Manage Windows Server 2022 environments
+* Administer Windows Server 2022 environments
 * Practice Active Directory administration
 * Develop Microsoft 365 administration skills
 * Learn Microsoft Azure cloud administration
 * Build Linux system administration skills
-* Improve networking and troubleshooting abilities
-* Practice PowerShell and Bash automation
-* Document technical work and solutions
+* Improve troubleshooting and problem-solving abilities
+* Practice PowerShell and Bash
+* Document technical projects and solutions
 
 ---
 
-## 🏗️ Lab Environment
-
-The homelab is designed to simulate a small IT environment containing virtualized servers, Windows and Linux systems, Microsoft services, and cloud resources.
+## 🏗️ Homelab Architecture
 
 ```text
-                         INTERNET
-                             │
-                             │
-                      ┌──────▼──────┐
-                      │   NETWORK   │
-                      │    ROUTER   │
-                      └──────┬──────┘
-                             │
-                    ┌────────▼────────┐
-                    │   VMware ESXi   │
-                    │      Host       │
-                    └────────┬────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              │              │              │
-        ┌─────▼─────┐  ┌─────▼─────┐  ┌─────▼─────┐
-        │ Windows   │  │   Linux   │  │   Other   │
-        │ Server    │  │   Server  │  │    VMs    │
-        │   2022    │  │           │  │           │
-        └─────┬─────┘  └───────────┘  └───────────┘
-              │
-       ┌──────▼──────┐
-       │     AD      │
-       │     DNS     │
-       │    DHCP     │
-       └─────────────┘
+                              INTERNET
+                                  │
+                                  │
+                         ┌────────▼────────┐
+                         │     ROUTER /    │
+                         │     FIREWALL    │
+                         └────────┬────────┘
+                                  │
+                           ┌──────▼───────┐
+                           │   NETWORK    │
+                           │   SWITCH     │
+                           └──────┬───────┘
+                                  │
+                         ┌────────▼────────┐
+                         │   VMware ESXi   │
+                         │      HOST       │
+                         └────────┬────────┘
+                                  │
+                ┌─────────────────┼─────────────────┐
+                │                 │                 │
+         ┌──────▼──────┐   ┌──────▼──────┐   ┌──────▼──────┐
+         │ Windows     │   │    Linux    │   │    Other    │
+         │ Server 2022 │   │    Server   │   │     VMs     │
+         └──────┬──────┘   └─────────────┘   └─────────────┘
+                │
+        ┌───────┼────────┐
+        │       │        │
+      ┌─▼─┐   ┌─▼─┐   ┌─▼──┐
+      │ AD │   │DNS│   │DHCP│
+      └───┘   └───┘   └────┘
 
-                             │
-                             │
-                    ┌────────▼────────┐
-                    │ Microsoft Azure │
-                    │   Cloud Lab     │
-                    └─────────────────┘
+                                  │
+                                  │ Cloud
+                                  ▼
+                         ┌─────────────────┐
+                         │ Microsoft Azure │
+                         │    Cloud Lab    │
+                         └─────────────────┘
 ```
 
 ---
 
-## 🧪 Labs and Projects
+## 🧪 Labs & Projects
 
 ### VMware Labs
 
 * Install and configure VMware ESXi
-* Configure ESXi hostname and networking
+* Configure ESXi hostname
+* Configure virtual networking
 * Create and manage virtual machines
-* Configure virtual switches and networking
-* Manage datastores
+* Configure datastores
 * Monitor host resources
+* Practice VM administration
 
-### Windows Server Labs
+### Windows Server 2022 Labs
 
 * Install Windows Server 2022
 * Configure a domain controller
 * Create users and groups
-* Configure DNS and DHCP
-* Create and manage Group Policies
+* Configure DNS
+* Configure DHCP
+* Create Group Policies
 * Join client computers to the domain
-* Practice server troubleshooting
+* Manage permissions
+* Troubleshoot server issues
 
-### Microsoft 365 Administration Labs
+### Microsoft 365 / Office Administration Labs
 
-* Create and manage users
-* Manage Microsoft 365 accounts
-* Explore administration portals
-* Practice permissions and access management
-* Manage Office applications
-* Troubleshoot common user issues
+* Create and manage user accounts
+* Explore Microsoft 365 administration
+* Manage licenses and access
+* Configure basic administrative settings
+* Practice Microsoft Office administration
+* Troubleshoot common user and account issues
+
+### CCNA Networking Labs
+
+* Create IP addressing plans
+* Practice subnetting
+* Configure VLANs
+* Configure trunk ports
+* Configure inter-VLAN routing
+* Configure static routes
+* Practice DHCP
+* Configure basic NAT
+* Troubleshoot network connectivity
+* Practice Cisco IOS commands
+* Build network simulations with Cisco Packet Tracer
 
 ### Azure Labs
 
-* Create Azure Resource Groups
+* Create Resource Groups
 * Deploy Azure Virtual Machines
-* Configure virtual networks
+* Configure Virtual Networks
+* Configure storage resources
 * Explore Microsoft Entra ID
-* Manage cloud resources
 * Practice identity and access management
-* Explore hybrid infrastructure concepts
+* Manage Azure resources
+* Explore hybrid cloud concepts
 
 ### Linux Labs
 
-* Install Linux servers
-* Configure users and groups
-* Manage permissions
-* Configure SSH
+* Install Linux operating systems
+* Create users and groups
+* Configure file permissions
 * Manage services
+* Configure SSH
+* Manage packages
+* Configure networking
 * Monitor system resources
-* Practice Bash commands and scripts
+* Practice Bash commands and scripting
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-it-homelab/
+it-infrastructure-homelab/
 │
 ├── vmware/
 │   ├── esxi/
@@ -203,9 +249,17 @@ it-homelab/
 │   └── file-services/
 │
 ├── microsoft-365/
-│   ├── user-management/
 │   ├── administration/
+│   ├── user-management/
 │   └── troubleshooting/
+│
+├── ccna/
+│   ├── networking-fundamentals/
+│   ├── subnetting/
+│   ├── switching/
+│   ├── routing/
+│   ├── vlan/
+│   └── packet-tracer/
 │
 ├── azure/
 │   ├── virtual-machines/
@@ -219,8 +273,6 @@ it-homelab/
 │   ├── ssh/
 │   └── bash/
 │
-├── networking/
-│
 ├── powershell/
 │
 ├── documentation/
@@ -230,7 +282,7 @@ it-homelab/
 
 ---
 
-## 📝 Documentation
+## 📝 Lab Documentation
 
 Each lab is documented with:
 
@@ -238,9 +290,9 @@ Each lab is documented with:
 * **Lab environment**
 * **Requirements**
 * **Configuration steps**
-* **Commands used**
+* **Commands and configurations**
 * **Screenshots**
-* **Troubleshooting**
+* **Troubleshooting steps**
 * **Problems encountered**
 * **Solutions**
 * **Lessons learned**
@@ -249,41 +301,40 @@ Each lab is documented with:
 
 ## 🔐 Security
 
-This repository does **not** contain real passwords, API keys, private keys, or other sensitive credentials.
+This repository does **not** contain real passwords, API keys, private keys, tokens, or other sensitive information.
 
-Any credentials, secrets, or environment-specific information used during the labs are stored separately and are never committed to GitHub.
+Lab credentials and secrets are stored separately and are never committed to GitHub.
 
 ---
 
-## 📈 Skills Being Developed
+## 📈 Skills in Development
 
-Through this homelab, I am developing practical skills in:
-
-**System Administration**
-**Virtualization**
-**Windows Server Administration**
-**Active Directory**
-**Microsoft 365 Administration**
-**Microsoft Azure**
-**Linux Administration**
-**Networking**
-**PowerShell**
-**Bash**
-**Troubleshooting**
-**IT Documentation**
+| Area            | Skills                                              |
+| --------------- | --------------------------------------------------- |
+| Virtualization  | VMware ESXi, vSphere, Virtual Machines              |
+| Windows         | Windows Server 2022, AD, DNS, DHCP, Group Policy    |
+| Microsoft 365   | User management, licensing, administration          |
+| Networking      | CCNA, TCP/IP, VLANs, routing, switching, subnetting |
+| Cloud           | Microsoft Azure, VMs, networking, Entra ID          |
+| Linux           | Administration, SSH, permissions, services, Bash    |
+| Automation      | PowerShell, Bash                                    |
+| Troubleshooting | System, network, server, and user issues            |
+| Documentation   | Lab guides, configurations, troubleshooting notes   |
 
 ---
 
 ## 🚀 Project Status
 
-This is an **ongoing learning project**. New labs, configurations, scripts, troubleshooting notes, and documentation will be added as I continue developing my IT infrastructure and cloud administration skills.
+**Ongoing**
+
+This homelab is continuously updated as I complete new labs, projects, configurations, scripts, and troubleshooting exercises.
 
 ---
 
 ## 👨‍💻 Purpose
 
-The purpose of this homelab is to gain **hands-on practical experience** with technologies commonly used in IT infrastructure and system administration environments.
+This project is part of my journey toward developing a career in **IT Infrastructure and System Administration**.
 
-I use this repository to **learn, build, troubleshoot, document, and improve** my technical skills.
+My goal is to gain practical experience by building and managing a simulated IT environment covering **virtualization, Windows Server, Microsoft 365, networking, cloud infrastructure, and Linux**.
 
 > **Learn → Build → Break → Troubleshoot → Document → Improve**

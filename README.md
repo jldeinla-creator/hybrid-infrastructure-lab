@@ -217,21 +217,19 @@ Each project focuses on practical tasks that can be found in real IT environment
 
 # 🏗️ Homelab Architecture
 ```text
-                              INTERNET
+                              INTERNET (ISP)
                                   │
                                   │
-                         ┌────────▼────────┐
-                         │ Router /        │
-                         │ Firewall        │
-                         └────────┬────────┘
+                         ┌────────▼─────────┐
+                         │ Router / Modem   │
+                         └────────┬─────────┘
                                   │
-                    ┌─────────────▼─────────────┐
-                    │ Personal Desktop /        │
-                    │ Physical Server            │
-                    └─────────────┬─────────────┘
+                    ┌─────────────▼───────────────┐
+                    │ Personal Desktop / Laptop   │
+                    └─────────────┬───────────────┘
                                   │
                     ┌─────────────▼─────────────┐
-                    │ VMware Workstation Pro     │
+                    │ VMware Workstation Pro    │
                     └─────────────┬─────────────┘
                                   │
                           ┌───────▼────────┐

@@ -1,4 +1,4 @@
-# VMware ESXi 6.5 — Quick Installation
+# VMware ESXi 8 — Quick Installation
 
 ## 1. Download ESXi
 

@@ -143,8 +143,8 @@ Each project focuses on practical tasks that can be found in real IT environment
                     └─────────────┬─────────────┘
                                   │
                           ┌───────▼────────┐
-                          │   VMware ESXi   │
-                          │   Virtual Host  │
+                          │   VMware ESXi  │
+                          │   Virtual Host │
                           └───────┬────────┘
                                   │
                ┌──────────────────┼──────────────────┐

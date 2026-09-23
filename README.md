@@ -32,7 +32,7 @@ Each project focuses on practical tasks that can be found in real IT environment
 * Allocate CPU and memory resources
 * Monitor virtual machines
 * Troubleshoot virtualization issues
-
+## View Project →
 ---
 
 ## 2. Windows Server 2022 Lab
@@ -51,7 +51,7 @@ Each project focuses on practical tasks that can be found in real IT environment
 * Join client systems to the domain
 * Manage permissions
 * Troubleshoot server and user issues
-
+## View Project →
 ---
 
 ## 3. Microsoft 365 / Office Administration Lab
@@ -66,7 +66,7 @@ Each project focuses on practical tasks that can be found in real IT environment
 * Practice account administration
 * Support Microsoft Office applications
 * Troubleshoot common user and account issues
-
+## View Project →
 ---
 
 ## 4. CCNA Networking Lab
@@ -86,7 +86,7 @@ Each project focuses on practical tasks that can be found in real IT environment
 * Troubleshoot connectivity
 * Practice Cisco IOS commands
 * Build network topologies using Cisco Packet Tracer
-
+## View Project →
 ---
 
 ## 5. Microsoft Azure Lab
@@ -103,7 +103,7 @@ Each project focuses on practical tasks that can be found in real IT environment
 * Practice identity and access management
 * Manage Azure resources
 * Explore hybrid cloud concepts
-
+# View Project →
 ---
 
 ## 6. Linux Administration Lab
@@ -122,7 +122,7 @@ Each project focuses on practical tasks that can be found in real IT environment
 * Monitor system resources
 * Configure networking
 * Practice Bash commands and scripting
-
+## View Project →
 ---
 
 # 🏗️ Homelab Architecture

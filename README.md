@@ -14,7 +14,7 @@ I use this homelab to strengthen my practical knowledge in **System Administrati
 
 Each project focuses on practical tasks that can be found in real IT environments, including server administration, network configuration, user management, virtualization, cloud resources, and troubleshooting.
 
-** Learn → Build → Troubleshoot → Document → Improve**
+**Learn → Build → Troubleshoot → Document → Improve**
 
 ---
 

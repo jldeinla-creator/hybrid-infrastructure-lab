@@ -156,11 +156,11 @@ Each project focuses on practical tasks that can be found in real IT environment
         │ Server 2022 │    │   Server    │    │     VMs     │
         └──────┬──────┘    └─────────────┘    └─────────────┘
                │
-         ┌─────┼─────┐
-         │     │     │
-        ┌▼┐   ┌▼┐   ┌▼┐
-        │AD│   │DNS│   │DHCP│
-        └─┘   └──┘   └────┘
+         ┌─────┼─────────┐
+         │     │         │
+        ┌▼┐   ┌▼┐       ┌▼┐
+        │AD│ │DNS│     │DHCP│
+        └─┘   └──┘     └────┘
 
 
                          INTERNET / CLOUD

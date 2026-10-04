@@ -1,20 +1,84 @@
-The error message "vSphere Client service has stopped working" indicates that the main web user interface component (vsphere-ui) on your vCenter Server Appliance (VCSA) has crashed or failed to initialize properly.
+Here is the **simple, fast GitHub `INSTRUCTIONS.md` format** for this troubleshooting lesson.
 
-Here are the step-by-step methods to troubleshoot and resolve this issue:
+# vSphere Client Service Troubleshooting
 
-Method 1: Start the Service via the Management UI (VAMI)
-The easiest way to resolve this is by using the vCenter Appliance Management Interface (VAMI), which runs independently on a separate management port:
-1. Open a new browser tab and navigate to: https://192.168.152.7:5480 (adding :5480 to your current IP).
-2. Log in using your root username and password.
-3. Go to the Services section from the main navigation menu.
-4. Locate the VMware vSphere Client (vsphere-ui) service.
-5. Select it and click Start or Restart.
+## Problem
 
-Method 2: Restart the Service via SSH
-If the service is completely hung, a manual restart via the command line usually forces it back up:
-1. Connect to your vCenter Server IP (192.168.152.7) using an SSH client like PuTTY.
-2. Log in as root and type shell to drop into the BASH shell.
-3. Check the current status of the UI service by running:
+Error:
+
+```text
+vSphere Client service has stopped working
+```
+
+This usually means the **`vsphere-ui`** service has stopped or failed to start.
+
+---
+
+## Method 1 — Restart Using VAMI
+
+1. Open a browser.
+2. Go to:
+
+```text
+https://192.168.152.7:5480
+```
+
+3. Log in as **root**.
+4. Open **Services**.
+5. Find:
+
+```text
+VMware vSphere Client
+vsphere-ui
+```
+
+6. Click **Start** or **Restart**.
+7. Verify that the service is running.
+
+---
+
+## Method 2 — Restart Using SSH
+
+1. Connect to the vCenter Server using **PuTTY** or another SSH client.
+
+```text
+192.168.152.7
+```
+
+2. Log in as **root**.
+3. Enter:
+
+```bash
+shell
+```
+
+4. Check the service status:
+
+```bash
 service-control --status vsphere-ui
-4. Restart the service by running:
+```
+
+5. Restart the service:
+
+```bash
 service-control --restart vsphere-ui
+```
+
+6. Check the status again:
+
+```bash
+service-control --status vsphere-ui
+```
+
+---
+
+## Verify
+
+Confirm:
+
+```text
+vsphere-ui service    ✅ Running
+vSphere Client        ✅ Accessible
+```
+
+**Status:** ✅ Troubleshooting Complete
